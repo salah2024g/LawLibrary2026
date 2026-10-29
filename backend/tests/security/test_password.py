@@ -1,4 +1,4 @@
-from app.security.utils.password import hash_password, verify_password
+from backend.app.security.utils.password import hash_password, verify_password
 
 
 def test_password_hash():
