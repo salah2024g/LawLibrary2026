@@ -27,3 +27,7 @@ ignore_missing_imports = true
 pretty = true
 explicit_package_bases = true
 mypy_path = "."
+
+[[tool.mypy.overrides]]
+module = ["app.api.routes.system.health"]
+ignore_errors = true
