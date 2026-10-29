@@ -1,6 +1,5 @@
-from fastapi.testclient import TestClient
-
 from backend.app.main import app
+from fastapi.testclient import TestClient
 
 
 def test_system_health_endpoint_returns_platform_status() -> None:
