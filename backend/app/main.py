@@ -13,6 +13,6 @@ _backend_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _backend_root not in sys.path:
     sys.path.insert(0, _backend_root)
 
-from backend.app.factory.application import create_application
+from backend.app.factory.application import create_application  # noqa: E402
 
 app = create_application()
