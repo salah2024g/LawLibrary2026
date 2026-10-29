@@ -1,6 +1,7 @@
+from fastapi import FastAPI
+
 from backend.app.api.router import api_router
 from backend.app.config.settings import settings
-from fastapi import FastAPI
 
 
 def create_application():
