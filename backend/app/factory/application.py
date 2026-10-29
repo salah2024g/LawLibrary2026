@@ -4,9 +4,6 @@ from fastapi import FastAPI
 
 
 def create_application():
-
     app = FastAPI(title=settings.app_name, version=settings.version)
-
     app.include_router(api_router)
-
     return app
