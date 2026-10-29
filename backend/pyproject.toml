@@ -1,7 +1,29 @@
+[tool.black]
+line-length = 100
+target-version = ["py314"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+    "BLE",
+]
+
+ignore = [
+    "UP046",
+]
+
 [tool.mypy]
 python_version = "3.14"
 warn_unused_configs = true
 ignore_missing_imports = true
 pretty = true
 explicit_package_bases = true
-mypy_path = "$MYPY_CONFIG_FILE_DIR"
+mypy_path = "backend"
