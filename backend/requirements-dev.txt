@@ -2,6 +2,7 @@
 
 pytest
 pytest-cov
+httpx
 black
 ruff
 mypy
