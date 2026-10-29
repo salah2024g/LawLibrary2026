@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 SECRET_KEY = "change-me"
 ALGORITHM = "HS256"
@@ -6,7 +6,7 @@ ALGORITHM = "HS256"
 
 def create_token(subject: str) -> dict:
 
-    expires = datetime.now(timezone.utc) + timedelta(minutes=30)
+    expires = datetime.now(UTC) + timedelta(minutes=30)
 
     return {"sub": subject, "expires": expires.isoformat()}
 
