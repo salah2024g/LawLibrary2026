@@ -5,4 +5,3 @@ python_version = "3.14"
 warn_unused_configs = true
 ignore_missing_imports = true
 pretty = true
-explicit_package_bases = true
